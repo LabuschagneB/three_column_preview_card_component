@@ -59,6 +59,7 @@ a {
   border-radius: 2rem;
   margin-top: 5rem;
   display: inline-block;
+  border: 0.15rem solid hsl(0, 0%, 95%);
 }
 
 @media (min-width: 35rem) {

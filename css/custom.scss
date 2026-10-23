@@ -9,7 +9,6 @@ $base-font: 15px;
 body, h1, p {
     margin:0;
 }
-
 body {
     font-family: "Lexend Deca", sans-serif;
     font-size: 1rem;
@@ -19,14 +18,12 @@ body {
     min-height: 100vh;
     background-color: $grey-100;
 }
-
 .rounded-container {
     max-width: 920px;
     margin: 1rem;
     display:flex;
     flex-direction: column;
 }
-
 .sedans {
     background: $gold-500;
     padding: 3rem;
@@ -61,6 +58,7 @@ a {
     border-radius: 2rem;
     margin-top: 5rem;
     display: inline-block;
+    border:0.15rem solid $grey-100;
 }
 @media (min-width:35rem) {
     .rounded-container {
