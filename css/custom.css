@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700&family=Lexend+Deca&display=swap");
-body, h1, p {
+body,
+h1,
+p {
   margin: 0;
 }
 
@@ -20,29 +22,41 @@ body {
   flex-direction: column;
 }
 
+.sedans,
+.suvs,
+.luxury {
+  padding: 2rem;
+}
+
 .sedans {
   background: hsl(31, 77%, 52%);
-  padding: 3rem;
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.sedans a {
+  color: hsl(31, 77%, 52%);
 }
 
 .suvs {
   background: hsl(184, 100%, 22%);
-  padding: 3rem;
+}
+.suvs a {
+  color: hsl(184, 100%, 22%);
 }
 
 .luxury {
   background: hsl(179, 100%, 13%);
-  padding: 3rem;
-  border-bottom-left-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.luxury a {
+  color: hsl(179, 100%, 13%);
 }
 
 h1 {
   font-family: "Big Shoulders", sans-serif;
   color: hsl(0, 0%, 95%);
-  margin: 2rem 0rem;
+  margin: 0.5rem 0rem;
   text-transform: uppercase;
 }
 
@@ -50,30 +64,49 @@ p {
   font-family: "Lexend Deca", sans-serif;
   color: hsla(0, 0%, 100%, 0.75);
   line-height: 1.7rem;
+  font-size: 1rem;
 }
 
 a {
   background-color: hsl(0, 0%, 95%);
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 2rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: inline-block;
   border: 0.15rem solid hsl(0, 0%, 95%);
+  transition: all 0.3s ease;
+}
+a:hover {
+  background-color: transparent;
+  border: 0.15rem solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 35rem) {
+  h1 {
+    margin: 2rem 0rem;
+  }
+  .sedans,
+  .suvs,
+  .luxury {
+    padding: 3rem;
+  }
   .rounded-container {
     flex-direction: row;
   }
+  a {
+    margin-top: 5rem;
+  }
   .sedans {
-    border-top-left-radius: 0.8rem;
-    border-bottom-left-radius: 0.8rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0;
   }
   .luxury {
-    border-top-right-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0;
   }
 }/*# sourceMappingURL=custom.css.map */
