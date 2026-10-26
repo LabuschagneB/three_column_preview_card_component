@@ -36,11 +36,27 @@ body {
 .sedans a {
   color: hsl(31, 77%, 52%);
 }
+.sedans::-moz-selection {
+  background: hsla(0, 0%, 100%, 0.75);
+  color: hsl(31, 77%, 52%);
+}
+.sedans::selection {
+  background: hsla(0, 0%, 100%, 0.75);
+  color: hsl(31, 77%, 52%);
+}
 
 .suvs {
   background: hsl(184, 100%, 22%);
 }
 .suvs a {
+  color: hsl(184, 100%, 22%);
+}
+.suvs::-moz-selection {
+  background: hsla(0, 0%, 100%, 0.75);
+  color: hsl(184, 100%, 22%);
+}
+.suvs::selection {
+  background: hsla(0, 0%, 100%, 0.75);
   color: hsl(184, 100%, 22%);
 }
 
@@ -50,6 +66,14 @@ body {
   border-bottom-right-radius: 0.5rem;
 }
 .luxury a {
+  color: hsl(179, 100%, 13%);
+}
+.luxury::-moz-selection {
+  background: hsla(0, 0%, 100%, 0.75);
+  color: hsl(179, 100%, 13%);
+}
+.luxury::selection {
+  background: hsla(0, 0%, 100%, 0.75);
   color: hsl(179, 100%, 13%);
 }
 

@@ -43,12 +43,22 @@ body {
     a {
         color: $gold-500;
     }
+
+    &::selection {
+        background: $white-75;
+        color: $gold-500;
+    }
 }
 
 .suvs {
     background: $cyan-800;
 
     a {
+        color: $cyan-800;
+    }
+
+    &::selection {
+        background: $white-75;
         color: $cyan-800;
     }
 }
@@ -59,6 +69,11 @@ body {
     border-bottom-right-radius: 0.5rem;
 
     a {
+        color: $green-950;
+    }
+
+    &::selection {
+        background: $white-75;
         color: $green-950;
     }
 }
